@@ -5,6 +5,10 @@
     font-family: "Poppins", sans-serif;
 }
 
+body {
+    padding-bottom: 500px;
+}
+
 h1,
 h2,
 h3,
@@ -29,6 +33,9 @@ img {
     max-width: 100%;
 }
 
+/************************************************ 
+---------------------ROOT------------------------
+*************************************************/
 :root {
     --preto-c12: #000000;
     --preto-c11: #111111;
@@ -38,13 +45,15 @@ img {
     --amarelo: #ffbb00;
     --amarelo-escuro: #332200;
 }
+
 /************************************************ 
----------------------HEADER----------------------
+---------------------HEADER-BG-------------------
 *************************************************/
 .header-bg {
     background-color: var(--preto-c12);
     padding-bottom: 20px;
 }
+
 /************************************************ 
 ---------------------HEADER-ctn------------------
 *************************************************/
@@ -63,6 +72,7 @@ img {
 .header-bg .header-ctn a img {
     padding-right: 10px;
 }
+
 /************************************************ 
 ---------------------HEADER-MENU-----------------
 *************************************************/
@@ -98,11 +108,11 @@ img {
 /************************************************ 
 ------------RESPONSIVIDADE-HEADER----------------
 *************************************************/
-
 @media (max-width: 800px) {
     .header-bg .header-ctn .header-menu li a:after {
         display: none;
     }
+
     .header-bg .header-ctn .header-menu li a {
         background-color: var(--preto-c11);
         border-radius: 4px;
@@ -113,10 +123,12 @@ img {
         background-color: var(--preto-c10);
     }
 }
+
 @media (max-width: 528px) {
     .header-bg .header-ctn .header-menu {
         margin-top: 10px;
     }
+
     .header-bg .header-ctn div {
         width: 100%;
     }
@@ -124,9 +136,11 @@ img {
     .header-bg .header-ctn a img {
         margin: 0 auto;
     }
+
     .header-bg .header-ctn nav {
         width: 100%;
     }
+
     .header-bg .header-ctn .header-menu li {
         margin: 0 auto;
     }
@@ -147,14 +161,19 @@ img {
         gap: 15px;
     }
 }
+
 /************************************************ 
----------------------MAIN------------------------
+---------------------INTRODUCAO-BG---------------
 *************************************************/
 .introducao-bg {
     background-color: var(--preto-c12);
     color: var(--branco);
+    box-shadow: inset 0px -120px white;
 }
 
+/************************************************ 
+---------------------INTRODUCAO-------------------
+*************************************************/
 .introducao-bg .introducao {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -167,10 +186,16 @@ img {
 
 .introducao-bg .introducao img {
     border-radius: 5px;
+    height: 100%;
+    object-fit: cover;
 }
 
+/************************************************ 
+---------------------CONTEUDO--------------------
+*************************************************/
 .introducao-bg .introducao .conteudo {
     align-self: center;
+    padding-bottom: 200px;
 }
 
 .introducao-bg .introducao .conteudo h1 {
@@ -205,5 +230,73 @@ img {
 }
 
 .introducao-bg .introducao .conteudo a:hover {
-    background: linear-gradient(#ffb60d, #da8c17);
+    background: linear-gradient(#ffb60d, #c77d0e);
+}
+
+/************************************************ 
+--------------------RESPONSIVIDADE---------------
+*************************************************/
+@media (max-width: 1200px) {
+    .introducao-bg .introducao .conteudo h1 {
+        font-size: 50px;
+    }
+
+    .introducao-bg .introducao .conteudo p {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 800px) {
+    .introducao-bg {
+        background-color: var(--preto-c11);
+    }
+
+    .introducao-bg .introducao {
+        grid-template-columns: 1fr;
+    }
+
+    .introducao-bg .introducao .conteudo {
+        padding-bottom: 30px;
+    }
+
+    .introducao-bg .introducao img {
+        height: 300px;
+        width: 70%;
+        background-size: cover;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media (max-width: 700px) {
+    .introducao-bg .introducao .conteudo h1 {
+        font-size: 36px;
+    }
+}
+
+@media (max-width: 700px) {
+    .introducao-bg .introducao .conteudo p {
+        font-size: 17px;
+    }
+}
+
+@media (max-width: 500px) {
+    .introducao-bg .introducao .conteudo a {
+        padding: 10px 10px;
+        font-size: 15px;
+    }
+
+    .introducao-bg .introducao .conteudo h1 {
+        line-height: 50px;
+    }
+}
+
+@media (max-width: 400px) {
+    .introducao-bg .introducao .conteudo p {
+        font-size: 15px;
+    }
+
+    .introducao-bg .introducao .conteudo a {
+        font-size: 14px;
+    }
 }
