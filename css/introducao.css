@@ -1,0 +1,79 @@
+/************************************************ 
+---------------------INTRODUCAO-BG---------------
+*************************************************/
+.introducao-bg {
+    background-color: var(--preto-c12);
+    color: var(--branco);
+    box-shadow: inset 0px -120px white;
+}
+
+/************************************************ 
+---------------------INTRODUCAO-------------------
+*************************************************/
+.introducao {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.introducao img {
+    border-radius: 5px;
+    height: 100%;
+    object-fit: cover;
+}
+
+/************************************************ 
+---------------------CONTEUDO--------------------
+*************************************************/
+.conteudo {
+    align-self: center;
+    padding-bottom: 200px;
+}
+
+.conteudo h1 {
+    margin-bottom: 20px;
+}
+
+
+.conteudo p {
+    width: 97%;
+    margin-bottom: 20px;
+}
+
+
+/************************************************ 
+--------------------RESPONSIVIDADE---------------
+*************************************************/
+
+
+@media (max-width: 800px) {
+    .introducao-bg {
+        background-color: var(--preto-c11);
+    }
+
+    .introducao {
+        grid-template-columns: 1fr;
+    }
+
+    .conteudo {
+        padding-bottom: 30px;
+    }
+
+    .introducao img {
+        height: 300px;
+        width: 70%;
+        background-size: cover;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media (max-width: 500px) {
+    .conteudo a {
+        padding: 10px 10px;
+    }
+}

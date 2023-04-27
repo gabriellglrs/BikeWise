@@ -1,0 +1,115 @@
+/************************************************ 
+---------------------HEADER-BG-------------------
+*************************************************/
+.header-bg {
+    background-color: var(--preto-c12);
+    padding-bottom: 20px;
+}
+
+/************************************************ 
+---------------------HEADER-ctn------------------
+*************************************************/
+.header-ctn {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+
+.header-ctn a img {
+    padding-right: 10px;
+}
+
+/************************************************ 
+---------------------HEADER-MENU-----------------
+*************************************************/
+.header-menu {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.header-menu li a {
+    color: var(--branco);
+    position: relative;
+    font-size: 1rem;
+    padding: 5px;
+    font-weight: 500;
+}
+
+.header-menu li a:after {
+    content: "";
+    display: block;
+    position: absolute;
+    height: 2px;
+    width: 0px;
+    background-color: var(--branco);
+    margin-top: 5px;
+    transition: 0.5s;
+}
+
+.header-menu li a:hover::after {
+    width: 100%;
+}
+
+/************************************************ 
+------------RESPONSIVIDADE-HEADER----------------
+*************************************************/
+@media (max-width: 800px) {
+    .header-menu li a:after {
+        display: none;
+    }
+
+    .header-menu li a {
+        background-color: var(--preto-c11);
+        border-radius: 4px;
+        padding: 10px;
+    }
+
+    .header-menu li a:hover {
+        background-color: var(--preto-c10);
+    }
+}
+
+@media (max-width: 528px) {
+    .header-menu {
+        margin-top: 10px;
+    }
+
+    .header-ctn div {
+        width: 100%;
+    }
+
+    .header-ctn a img {
+        margin: 0 auto;
+    }
+
+    .header-ctn nav {
+        width: 100%;
+    }
+
+    .header-menu li {
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 400px) {
+    .header-menu li a {
+        font-size: 14px;
+    }
+
+    .header-menu {
+        margin-top: 10px;
+    }
+}
+
+@media (max-width: 320px) {
+    .header-menu {
+        gap: 15px;
+    }
+}
