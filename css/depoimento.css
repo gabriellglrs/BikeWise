@@ -5,6 +5,7 @@
 }
 
 .depoimento-box1 img {
+    border-top-left-radius: 5px;
 }
 
 .depoimento-box2 {
@@ -15,6 +16,7 @@
     justify-content: center;
     align-items: center;
     padding: 20px 30px;
+    border-top-right-radius: 5px;
 }
 
 .depoimento-box2 p {
