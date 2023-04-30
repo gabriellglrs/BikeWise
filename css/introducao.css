@@ -13,11 +13,6 @@
 .introducao {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    max-width: 1200px;
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 15px;
-    padding-right: 15px;
 }
 
 .introducao img {
@@ -38,17 +33,14 @@
     margin-bottom: 20px;
 }
 
-
 .conteudo p {
     width: 97%;
     margin-bottom: 20px;
 }
 
-
 /************************************************ 
 --------------------RESPONSIVIDADE---------------
 *************************************************/
-
 
 @media (max-width: 800px) {
     .introducao-bg {

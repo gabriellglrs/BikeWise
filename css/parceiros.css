@@ -1,0 +1,49 @@
+/*****************************************
+-----------------parceiros----------------
+*****************************************/
+.parceiros h2 {
+    margin-top: 50px;
+}
+/*****************************************
+-----------------parceiros-flex----------------
+*****************************************/
+.parceiros-flex {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 50px;
+}
+
+.parceiros-flex li {
+    flex-basis: 25%;
+    margin-top: 40px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.parceiros-flex li img {
+    margin-left: auto;
+    margin-right: auto;
+}
+/*****************************************
+-----------------responsividade-----------
+*****************************************/
+@media (max-width: 900px) {
+    .parceiros-flex {
+        margin-top: 0px;
+    }
+    .parceiros-flex li {
+        flex-basis: 50%;
+    }
+}
+
+@media (max-width: 500px) {
+    .parceiros-flex img {
+        width: 150px;
+    }
+}
+
+@media (max-width: 400px) {
+    .parceiros-flex img {
+        width: 100px;
+    }
+}

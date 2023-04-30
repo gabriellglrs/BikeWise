@@ -1,0 +1,108 @@
+/*********************************************** 
+-----------------tecnologia-bg------------------
+************************************************/
+.tecnologia-bg {
+    background-color: var(--preto-c11);
+    box-shadow: inset 0 80px var(--branco), inset 0 -80px var(--branco);
+}
+/*********************************************** 
+-----------------tecnologia-grid----------------
+************************************************/
+.tecnologia-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+}
+/*********************************************** 
+-----------------tecnologia-card1---------------
+************************************************/
+.tecnologia-card1 {
+    align-self: center;
+    padding-top: 160px;
+    padding-bottom: 160px;
+}
+
+.tecnologia-card1 h3 {
+    margin-bottom: 25px;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+.tecnologia-card1 h2 {
+    margin-bottom: 30px;
+}
+
+.tecnologia-card1 p {
+    margin-bottom: 25px;
+}
+
+.tecnologia-card1 a {
+    display: inline-block;
+    text-transform: uppercase;
+    font-weight: 500;
+    border-bottom: 4px solid var(--amarelo);
+    padding: 6px;
+    margin-bottom: 80px;
+}
+
+.tecnologia-card1 a:hover {
+    background-color: var(--amarelo-escuro);
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+}
+/*********************************************** 
+-----------------tecnologia-flex----------------
+************************************************/
+.tecnologia-flex {
+    display: flex;
+    gap: 30px;
+}
+
+.tecnologia-flex img {
+    margin-bottom: 8px;
+    width: 24px;
+}
+/*********************************************** 
+-----------------tecnologia-card2----------------
+************************************************/
+.tecnologia-card2 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: left;
+    border-radius: 5px;
+}
+
+/*********************************************** 
+-----------------responsividade-----------------
+************************************************/
+@media (max-width: 900px) {
+    .tecnologia-bg {
+        box-shadow: initial;
+    }
+    .tecnologia-grid {
+        grid-template-columns: 1fr;
+    }
+    .tecnologia-card1 {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+    .tecnologia-flex p {
+        margin-bottom: 0px;
+    }
+    .tecnologia-card2 {
+        display: none;
+    }
+}
+/*********************************************** 
+-----------------max-width-500x-----------------
+************************************************/
+@media (max-width: 500px) {
+    .tecnologia-flex {
+        flex-direction: column;
+        gap: 10px;
+    }
+    .tecnologia-card1 a {
+        margin-bottom: 30px;
+    }
+}
