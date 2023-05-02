@@ -22,3 +22,9 @@
 .btn:hover {
     background: linear-gradient(#ffb60d, #c77d0e);
 }
+
+@media (max-width: 700px) {
+    .btn {
+        padding: 10px 20px;
+    }
+}

@@ -15,7 +15,7 @@
 }
 
 .seguros-card1 {
-    width: 560px;
+    width: 45%;
     height: 390px;
     background-color: var(--preto-c12);
     border-radius: 5px;
@@ -58,7 +58,7 @@
 }
 
 .seguros-card2 {
-    width: 560px;
+    width: 45%;
     height: 480px;
     background-color: var(--preto-c12);
     border-radius: 5px;
@@ -71,4 +71,39 @@
 }
 .seguros-card2 .a a {
     margin: 0 auto;
+}
+
+@media (max-width: 700px) {
+    .seguros-flex {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .seguros-card1 {
+        margin-bottom: 0;
+        width: 400px;
+    }
+
+    .seguros-card2 {
+        margin-bottom: 40px;
+        width: 400px;
+    }
+}
+
+@media (max-width: 450px) {
+    .seguros-card1 {
+        width: 300px;
+    }
+    .seguros-card2 {
+        width: 300px;
+    }
+}
+
+@media (max-width: 350px) {
+    .seguros-card1 {
+        width: 275px;
+    }
+    .seguros-card2 {
+        width: 275px;
+    }
 }

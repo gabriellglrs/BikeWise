@@ -35,7 +35,6 @@
 
 .depoimento-box2 p::after {
     content: "”";
-    display: block;
     font-size: 50px;
     position: absolute;
     color: #dda50c;
@@ -47,6 +46,10 @@
     .depoimento {
         grid-template-columns: 1fr;
     }
+
+    .depoimento .container {
+        padding: 0px;
+    }
     .depoimento-box1 img {
         border-top-left-radius: 5px;
         border-top-right-radius: 5px;
@@ -56,8 +59,7 @@
         object-position: bottom;
     }
     .depoimento-box2 {
-        border-bottom-left-radius: 5px;
-        border-bottom-right-radius: 5px;
+        border-radius: 0px;
     }
 }
 

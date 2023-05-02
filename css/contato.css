@@ -14,9 +14,6 @@
     padding-bottom: 50px;
 }
 
-.contato-box1 img {
-}
-
 .contato-grid2 {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -57,4 +54,35 @@
 
 .contato-direitos {
     margin-top: 50px;
+}
+
+@media (max-width: 1150px) {
+    .contato-box2 .elemento {
+        width: 250px;
+    }
+}
+
+@media (max-width: 900px) {
+    .contato-grid {
+        grid-template-columns: 1fr;
+        margin: 0 auto;
+    }
+
+    .contato-box1 img {
+        margin-bottom: 50px;
+    }
+
+    .contato-grid2 {
+        justify-self: center;
+        gap: 40px;
+    }
+    .contato-box2 .elemento {
+        width: 210px;
+    }
+}
+
+@media (max-width: 400px) {
+    .contato-grid2 {
+        grid-template-columns: 1fr;
+    }
 }
