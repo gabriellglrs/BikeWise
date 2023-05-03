@@ -4,7 +4,7 @@
 
 .catalogo-grid1 {
     display: grid;
-    grid-template-columns: 45% 45%;
+    grid-template-columns: 40% 40%;
     gap: 40px;
     justify-content: center;
     padding-top: 60px;
@@ -15,12 +15,12 @@
     background: linear-gradient(to left, #111111 74%, transparent 50%);
 }
 .catalogo-grid1-img {
-    max-height: 340px;
     position: relative;
 }
 
 .catalogo-grid1-img img {
     border-radius: 4px;
+    max-height: 340px;
 }
 
 .catalogo-grid1-img p {
@@ -77,4 +77,44 @@
 .catalogo-grid2-a {
     justify-self: end;
     align-self: flex-end;
+}
+
+@media (max-width: 900px) {
+    .catalogo-grid1-bg {
+        background-color: #111111;
+    }
+    .catalogo-grid1 {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+    .catalogo-grid1-img {
+        justify-self: center;
+    }
+
+    .catalogo-box p {
+        text-align: center;
+        width: 100%;
+        display: block;
+    }
+
+    .catalogo-box h3 {
+        margin-top: 0px;
+    }
+}
+
+@media (max-width: 700px) {
+    .catalogo-grid1 {
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+}
+
+@media (max-width: 500px) {
+    .catalogo-grid2 {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+    .catalogo-grid2-a {
+        justify-self: center;
+    }
 }
